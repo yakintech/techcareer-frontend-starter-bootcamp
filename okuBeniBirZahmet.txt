@@ -13,3 +13,7 @@ https://www.w3schools.com/css/css3_flexbox.asp
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 https://flexboxfroggy.com/
 https://www.youtube.com/watch?v=_s15i3MoAyE
+
+
+CSS Ölçü Birimleri
+https://medium.com/baakademi/cssde-%C3%B6l%C3%A7%C3%BC-ve-uzunluk-birimleri-6563c2ee9853
