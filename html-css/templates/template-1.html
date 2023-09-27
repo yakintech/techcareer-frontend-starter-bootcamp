@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        referrerpolicy="no-referrer" />
     <style>
-        nav{
+        nav {
             height: 104px;
             background-color: #2C3E50;
             padding-left: 10%;
@@ -15,37 +18,74 @@
             justify-content: space-between;
             align-items: center;
         }
-        nav h1{
+
+        nav h1 {
             color: #fff;
             font-size: 28px;
             font-weight: 900;
             cursor: pointer;
         }
-        nav a{
+
+        nav a {
             color: #fff;
         }
-        nav ul{
+
+        nav ul {
             display: flex;
         }
-        nav li{
+
+        nav li {
             margin-left: 12px;
         }
-        nav a{
+
+        nav a {
             text-decoration: none;
             text-transform: uppercase;
             font-weight: 600;
 
         }
-        nav a:hover{
+
+        nav a:hover {
             color: #19BC9C;
+        }
+
+        header {
+            height: 782px;
+            color: #fff;
+            background-color: #19BC9C;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 64px;
+        }
+
+        header p {
+            font-size: 24px;
+        }
+
+        header hr{
+            height: 2px;
+            width: 180px;
+            background-color: #fff;
+            border: none;
+          
+        }
+        header i{
+            margin-left: 20px;
+            margin-right: 20px;
         }
     </style>
 </head>
+
 <body>
 
     <nav>
         <h1>Start Bootstrap</h1>
- 
+
         <ul>
             <li><a href='#'>Portfolio</a></li>
             <li><a href='#'>About</a></li>
@@ -53,6 +93,20 @@
 
         </ul>
     </nav>
-    
+
+
+    <header>
+        <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg" alt=""
+            width="250" height="250" srcset="">
+        <h1>START BOOTSTRAP</h1>
+        <div style="display: flex;  align-items: center;">
+            <hr>
+            <i style="font-size: 35px;" class="fa-solid fa-star"></i>
+            <hr>
+        </div>
+        <p>Graphic Artist - Web Designer - Illustrator</p>
+    </header>
+
 </body>
+
 </html>

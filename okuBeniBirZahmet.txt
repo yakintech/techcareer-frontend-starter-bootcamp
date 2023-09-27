@@ -3,3 +3,13 @@ https://webdesign.tutsplus.com/the-30-css-selectors-you-must-memorize--net-16048
 
 İki kutunun yanyana gelme hikayesi
 https://www.youtube.com/watch?v=OaEtW_CSaPk
+
+
+
+
+
+FLEX
+https://www.w3schools.com/css/css3_flexbox.asp
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://flexboxfroggy.com/
+https://www.youtube.com/watch?v=_s15i3MoAyE
