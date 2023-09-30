@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @media screen and (max-width: 700px) {
+            .container {
+                display: grid;
+                grid-template-columns: auto auto;
+                padding: 10%;
+            }
+        }
+        @media screen and (min-width: 700px) {
+            .container {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                padding: 10%;
+            }
+        }
+
+        .box {
+            width: 300px;
+            height: 200px;
+            border-style: solid;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box">Box - 1</div>
+        <div class="box">Box - 2</div>
+        <div class="box">Box - 3</div>
+        <div class="box">Box - 4</div>
+        <div class="box">Box - 5</div>
+        <div class="box">Box - 6</div>
+        <div class="box">Box - 7</div>
+        <div class="box">Box - 8</div>
+        <div class="box">Box - 9</div>
+        <div class="box">Box - 10</div>
+        <div class="box">Box - 11</div>
+        <div class="box">Box - 12</div>
+
+    </div>
+
+</body>
+
+</html>
