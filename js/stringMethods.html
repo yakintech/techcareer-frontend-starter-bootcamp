@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var firstName = "Çağatay"
+
+    //metni büyült
+    console.log(firstName.toUpperCase());
+
+    //metni küçült
+    console.log(firstName.toLowerCase());
+
+    //metindeki a harflerini x yap
+    console.log(firstName.replaceAll("a","x"))
+    
+
+    var product = "Transporter T4 Sol Arka Stop Lambası Füme 1993-1996 701945112"
+
+    //metindeki bir elemanın olup olmadığını kontrol ediyorum
+    var status = product.toLowerCase().includes("transporter t4 Sol arka stop".toLowerCase())
+    console.log(status);
+
+
+    console.log("length: ", product.length);
+
+
+    var city = "      istanbul"
+    console.log(city);
+    console.log(city.trim());
+
+    
+
+</script>
+</html>
