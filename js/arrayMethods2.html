@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var cities = ["İstanbul", "Ankara", "İzmir", "Aydın", "Diyarbakır", "Trabzon", "Edirne", "Konya"]
+
+    //Bu dizide bulunan birinci elemanı SİL!
+    //1. parametre olarak sileceğim noktayı belirtiyorum. Daha sonra kaç adet sileceğimi söylüyorum. Sıfırıncı indexten başla bir adet sil.
+
+    cities.splice(0, 1);
+    console.log("cities", cities);
+
+
+    var newCities = ["Erzurum", ...cities, "Kırıkkale"]
+    console.log("new cities", newCities);
+
+
+    //index of metodu ile dizideki elemanın index numarası bulunur
+    //"Ankara" şehrini diziden sil!
+    var indexNo = cities.indexOf("Ankara");
+    cities.splice(indexNo, 1)
+
+    console.log('cities', cities);
+
+</script>
+
+</html>
