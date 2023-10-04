@@ -1,0 +1,7 @@
+    //fiyatı 30 ile 100 arasında kaç adet ürün var?
+    //ismi a harfi ile başlayan ürünleri console a yazdır
+    //ismi a harfi ile BİTEN ürünleri console a yazdır
+    // id si 10 olan ürünün adını console a yazdır
+    //discontinued false olan kaç ürün var
+    // en pahalı ürünün adını console a yazdır
+    //en ucuz ürünün adını console a yazdır
