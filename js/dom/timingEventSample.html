@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="start()">START</button>
+
+    <hr>
+
+    <img src="https://practicalhorsemanmag.com/wp-content/uploads/2022/03/possible-opener2-scaled.jpg" alt="">
+
+</body>
+<script>
+    function start(){
+
+        var total = 0;
+        setInterval(() => {
+            
+            //0 ile 200 arasında bir sayı üretiyor
+            var random = Math.random() * 200
+
+            total = total + random;
+
+            document.querySelector("img").style.marginLeft = total + "px"
+
+        }, 500);
+
+    }
+</script>
+</html>

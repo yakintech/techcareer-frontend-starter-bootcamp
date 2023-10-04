@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <label for="">Name</label>
+        <input id="name" type="text" />
+    </div>
+    <button onclick="add()">Add</button>
+    <ul>
+        <li>Iron Maiden</li>
+        <li>Slipknot</li>
+    </ul>
+</body>
+<script>
+    function add(){
+        var data = document.getElementById('name').value;
+
+        var liElement = document.createElement('li');
+        liElement.innerText = data;
+
+        document.querySelector('ul').append(liElement);
+
+        document.getElementById('name').value = "";
+    }
+</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptatum? Autem magni ea
+        praesentium provident ducimus odit tenetur sequi, in exercitationem quas eveniet voluptatum vel voluptas quis
+        vitae amet itaque.</p>
+
+    <button onclick="change()">Change Text</button>
+    <button onclick="changeColor()">Change Color</button>
+</body>
+<script>
+
+    //html içerisindeki elementler js ile yakalanıp manipüle edilebilir. Örneğin yukarıdaki p elementini yakalamnın birçok yolu var.
+
+    //1. yol - Id vererek yakalamak
+
+    // function change(){
+    //     var pElement = document.getElementById('title');
+    //     pElement.innerText = "Tech Career";
+    // }
+
+
+    //2. yol - 
+    function change() {
+        var pElement = document.querySelector('p');
+        pElement.innerText = "Tech Career";
+    }
+
+
+    function changeColor(){
+        var pElement = document.querySelector('p');
+        pElement.style.color = 'tomato'
+    }
+
+
+    
+
+
+
+
+
+</script>
+
+</html>
