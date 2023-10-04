@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    function calc(x, y) {
+        var q = x * y;
+        return q;
+    }
+
+
+    var hello = function () {
+        console.log('Hello');
+    }
+
+
+
+    //CALLBACK
+
+    function calc2(x, y, myCallback) {
+        var result = x * y;
+
+        //
+        //
+        //
+        myCallback(result);
+    }
+
+
+
+    calc2(10, 20, print)
+
+    function print(data) {
+        console.log(data);
+    }
+
+
+    var names = ["Müge", "Ertan", "Sinem", "Çağatay", "Aykut", "Porti"]
+
+
+    names.forEach(print2)
+
+
+    function print2(item, index) {
+        console.log(item);
+    }
+
+</script>
+
+</html>
