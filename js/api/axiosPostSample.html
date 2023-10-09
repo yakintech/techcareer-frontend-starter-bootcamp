@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <label for="">Name</label>
+        <input type="text" name="" id="name">
+    </div>
+
+    <div>
+        <label for="">Description</label>
+        <input type="text" name="" id="description">
+    </div>
+
+    <div>
+        <button onclick="add()">Add</button>
+    </div>
+
+</body>
+<script>
+    //Ekrana iki adet input ve bir adet button koy. Butona tıkladığında inputtan aldığı dataları server a göndersin
+
+    function add() {
+        var name = document.getElementById('name').value;
+        var description = document.getElementById('description').value;
+
+
+        var newCategory = {
+            name,
+            description
+        }
+
+        axios.post('https://northwind.vercel.app/api/categories', newCategory)
+            .then(res => {
+                console.log(res.data);
+            })
+    }
+
+</script>
+
+</html>

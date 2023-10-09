@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <button onclick="getCategories()">Get Categories</button>
+
+    <ul>
+
+    </ul>
+</body>
+<script>
+
+    function getCategories() {
+
+        axios.get('https://northwind.vercel.app/api/categories')
+            .then(res => {
+               var categories = res.data
+
+               categories.forEach(element => {
+                    var liElement = document.createElement('li');
+                    liElement.innerText = element.name;
+
+                    document.querySelector('ul').appendChild(liElement);
+               });
+
+            })
+
+    }
+
+</script>
+
+</html>
