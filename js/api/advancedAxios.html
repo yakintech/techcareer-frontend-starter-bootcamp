@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+
+</body>
+<script>
+
+    const axiosInstance = axios.create({
+        baseURL: 'https://northwind.vercel.app/api/',
+        timeout: 1000
+    });
+
+    axiosInstance.interceptors.request.use(function (config) {
+
+        console.log('HELLO');
+
+        return config;
+    }, function (error) {
+        // Do something with request error
+        return Promise.reject(error);
+    });
+
+
+    axiosInstance.get('products')
+        .then(res => {
+            console.log('Response', res);
+        })
+
+
+
+
+
+
+
+
+</script>
+
+</html>
